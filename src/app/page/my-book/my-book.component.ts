@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import {faArrowCircleDown} from '@fortawesome/free-solid-svg-icons';
+import {
+  faArrowCircleDown,
+  faCog,
+  faQuestionCircle
+} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-my-book',
@@ -8,6 +12,8 @@ import {faArrowCircleDown} from '@fortawesome/free-solid-svg-icons';
 })
 export class MyBookComponent implements OnInit {
   faArrowCircleDown = faArrowCircleDown;
+  faCog = faCog;
+  faQuestionCircle = faQuestionCircle;
   users = [
     {img: '../../../assets/img_avatar.png', name: 'John Doe'}
   ];
