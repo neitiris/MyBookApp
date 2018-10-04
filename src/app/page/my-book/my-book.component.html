@@ -14,6 +14,38 @@
     </div>
   </header>
 
+  <div class="content_container">
+    <aside class="aside">
+      <ul class="aside__list">
+        <li class="aside__item aside__button-item">
+          <button class="add_book__button"><fa-icon [icon]="faPlus"> </fa-icon> ADD A BOOK</button>
+        </li>
+      </ul>
+      <ul class="aside__list">
+        <li class="aside__item" *ngFor="let link of linksList">
+          <input type="radio" name="radio" id="{{link.radio}}">
+          <label for="{{link.radio}}" class="aside__link"><fa-icon class="aside__icon" [icon]="link.icon"></fa-icon> {{link.name}}</label>
+        </li>
+      </ul>
+      <ul class="aside__list">
+        <li class="aside__item" *ngFor="let link of linksTypes">
+          <input type="radio" name="radio" id="{{link.radio2}}">
+          <label for="{{link.radio2}}" class="aside__link" ><fa-icon class="aside__icon circle_icon  {{link.class}}" [icon]="link.icon"></fa-icon> {{link.name}}</label>
+        </li>
+      </ul>
+      <ul class="aside__list">
+        <li class="aside__item aside__alert-item" *ngFor="let alert of alerts">
+          <div class="aside__link alert__icon"><fa-icon class="aside__icon" [icon]="alert.icon"></fa-icon>
+            <div class="aside__alert-link">
+              <p class="alert__text">{{alert.name}}</p>
+              <p class="alert__text">{{alert.time}}</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </aside>
+  </div>
+
   <footer class="footer">
     <div class="footer__container">
       <ul class="footer__list">
