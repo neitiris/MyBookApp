@@ -55,6 +55,91 @@
   display: flex; }
 
 /***********************************************************
+                      CONTENT
+***********************************************************/
+.content_container {
+  height: 100%;
+  padding: 45px 0; }
+
+.aside {
+  width: 200px;
+  height: 100%;
+  background-color: #1f2637; }
+
+.aside__list {
+  padding: 5px 0;
+  margin: 0;
+  box-shadow: inset rgba(24, 30, 44, 0.8) 0 -5px 0px, inset rgba(252, 255, 255, 0.1) 0 2px 8px, rgba(0, 0, 0, 0.8) 0 0px 0px 0px; }
+
+.aside__button-item {
+  padding: 35px 20px; }
+
+input:checked ~ label {
+  background: #15a4fa;
+  color: #fff; }
+
+input[type="radio"] {
+  display: none; }
+
+.aside__item {
+  list-style: none;
+  height: 40px;
+  align-items: center;
+  display: flex; }
+
+.aside__alert-item {
+  height: 130px; }
+
+.aside__alert-link {
+  height: 130px; }
+
+.alert__icon {
+  align-items: baseline !important; }
+
+.alert__text {
+  font-size: 14px; }
+
+.aside__link {
+  text-decoration: none;
+  color: #eef1f7;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 20px; }
+
+.aside__icon {
+  padding-right: 10px; }
+
+.circle_icon {
+  font-size: 7px;
+  padding: 5px 12px 5px 5px; }
+
+.add_book__button {
+  border: none;
+  border-radius: 4px;
+  background-color: #f2795a;
+  width: 160px;
+  height: 44px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+  text-align: center; }
+
+.red {
+  color: red; }
+
+.orange {
+  color: #ffab00; }
+
+.blue {
+  color: #00bfdd; }
+
+.violete {
+  color: #7874cf; }
+
+/***********************************************************
                       FOOTER
 ***********************************************************/
 .footer {
