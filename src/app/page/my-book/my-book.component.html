@@ -1,0 +1,16 @@
+<div class="my-book__container">
+  <header class="header">
+    <div class="header container">
+      <ul class="header__list">
+        <li class="header__item"><a class="header__link" href="">Help Center</a></li>
+        <li class="header__item"><a class="header__link" href="">Our Support</a></li>
+        <li class="header__item user_item">
+          <a class="header__link" *ngFor="let user of users" href="">
+            <img class="user_img" src="{{user.img}}"> <span class="user_name">{{user.name}}</span>
+            <fa-icon class="user_name" [icon]="faArrowCircleDown"></fa-icon>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+</div>
