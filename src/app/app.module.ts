@@ -7,11 +7,14 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {ApproutingModule} from './approuter.module';
 import { MyBookComponent } from './page';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import { BooksComponent, RatingComponent } from './components';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MyBookComponent
+    MyBookComponent,
+    BooksComponent,
+    RatingComponent
   ],
   imports: [
     BrowserModule,
@@ -23,6 +26,7 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
   providers: [
     HttpClientModule,
     HttpClient,
+    BooksComponent
   ],
   bootstrap: [AppComponent]
 })

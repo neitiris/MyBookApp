@@ -61,6 +61,19 @@
           </div>
         </div>
       </div>
+
+      <div class="content">
+        <app-books
+          *ngFor="let book of books"
+          [book_author]="book.name"
+          [book_name]="book.author"
+          [book_image]="book.img"
+          [book_id]="book.id"
+          [book_rating]="book.rating"
+        >
+        </app-books>
+      </div>
+
     </div>
   </div>
 
