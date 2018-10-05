@@ -153,7 +153,8 @@
   border-bottom: 1px solid #dadfea;
   padding: 20px;
   margin: 0;
-  color: #444c63; }
+  color: #444c63;
+  display: none; }
 
 .books__nav {
   height: 42px;

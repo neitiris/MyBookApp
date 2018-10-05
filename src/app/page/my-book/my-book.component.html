@@ -23,13 +23,13 @@
       </ul>
       <ul class="aside__list">
         <li class="aside__item" *ngFor="let link of linksList">
-          <input type="radio" name="radio" id="{{link.radio}}">
+          <input class="aside__radio" type="radio" name="radio" id="{{link.radio}}">
           <label for="{{link.radio}}" class="aside__link"><fa-icon class="aside__icon" [icon]="link.icon"></fa-icon> {{link.name}}</label>
         </li>
       </ul>
       <ul class="aside__list">
         <li class="aside__item" *ngFor="let link of linksTypes">
-          <input type="radio" name="radio" id="{{link.radio2}}">
+          <input class="aside__radio" type="radio" name="radio" id="{{link.radio2}}">
           <label for="{{link.radio2}}" class="aside__link" ><fa-icon class="aside__icon circle_icon  {{link.class}}" [icon]="link.icon"></fa-icon> {{link.name}}</label>
         </li>
       </ul>
@@ -44,6 +44,24 @@
         </li>
       </ul>
     </aside>
+
+    <div class="books__container">
+      <div class="books__layout">
+        <h1 class="books__label-title">Browse Available Books</h1>
+        <div class="books__nav">
+          <ul class="books-filter__list">
+            <li class="books-filter__item" *ngFor="let filter of filters">
+              <input class="filter__radio" type="radio" name="radio" id="{{filter.filter1}}">
+              <label for="{{filter.filter1}}" class="filter__button">{{filter.name}}</label>
+            </li>
+          </ul>
+          <div class="search">
+            <input class="search_input" type="text" placeholder="Enter Keywords">
+            <button class="search__btn"><fa-icon class="search-btn__icon" [icon]="faSearch"></fa-icon></button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <footer class="footer">
