@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,eAAe;EACb,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,GAAG;;AAEb,UAAU;EACR,OAAO,EAAE,GAAG;;AAEd,WAAW;EACT,MAAM,EAAE,KAAK;EACb,KAAK,EAAG,OAAO;EACf,SAAS,EAAE,IAAI;;AAEjB,aAAa;EACX,MAAM,EAAE,MAAM;EACd,KAAK,EAAG,OAAO;EACf,SAAS,EAAE,IAAI",
+"sources": ["books.component.scss"],
+"names": [],
+"file": "books.component.css"
+}
