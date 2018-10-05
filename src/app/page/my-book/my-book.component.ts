@@ -10,7 +10,8 @@ import {
   faStar,
   faClock,
   faListAlt,
-  faCircle
+  faCircle,
+  faSearch
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -23,6 +24,7 @@ export class MyBookComponent implements OnInit {
   faCog = faCog;
   faQuestionCircle = faQuestionCircle;
   faPlus = faPlus;
+  faSearch = faSearch;
   users = [
     {img: '../../../assets/img_avatar.png', name: 'John Doe'}
   ];
@@ -43,6 +45,15 @@ export class MyBookComponent implements OnInit {
   alerts = [
     {icon: faClock, name: 'You added Fight Club by Chuck Palahniuk to your Must Read Title', time: '48 minutes ago'},
     {icon: faClock, name: 'You added Fight Club by Chuck Palahniuk to your Must Read Title', time: '48 minutes ago'}
+  ];
+  filters = [
+    {filter1: 'filter_box1', name: 'All Books', title: 'Browse Available Books'},
+    {filter1: 'filter_box2', name: 'Most Resent', title: 'Browse Available Books'},
+    {filter1: 'filter_box3', name: 'Most Popular', title: 'Browse Available Books'},
+    {filter1: 'filter_box4', name: 'Free Books', title: 'Browse Available Books'}
+  ];
+  titles = [
+    {class: 'header__box1', text: 'Browse Available Books'}
   ];
   constructor() { }
 

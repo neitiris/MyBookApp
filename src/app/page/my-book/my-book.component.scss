@@ -61,6 +61,7 @@
 .content_container{
   height: 100%;
   padding: 45px 0;
+  display: flex;
 }
 .aside{
   //background: #141824;
@@ -79,8 +80,8 @@
 .aside__button-item{
   padding: 35px 20px;
 }
-input:checked~label{background:#15a4fa; color:#fff}
-input[type="radio"]{
+.aside__radio:checked~label{background:#15a4fa; color:#fff}
+.aside__radio[type="radio"]{
   display:none
 }
 .aside__item{
@@ -141,6 +142,74 @@ input[type="radio"]{
 .violete{
   color: #7874cf;
 }
+
+.books__container{
+  width: 1120px;
+  height: 100px;
+}
+.books__layout{
+  height: 120px;
+  background:  #eef1f7;
+  padding: 1px 0;
+}
+.books__label-title{
+  border-bottom: 1px solid #dadfea;
+  padding: 20px;
+  margin: 0;
+  color: #444c63;
+  display: none;
+
+}
+.books__nav{
+  height: 42px;
+  border-top: 1px solid #f7f7f7;
+}
+.books-filter__list{
+  display: flex;
+  padding-left: 5px;
+  margin: 7px 0;
+  float: left;
+}
+.filter__button{
+  cursor: pointer;
+  padding: 5px 10px;
+  margin: 0 5px;
+}
+.books-filter__item{
+  list-style: none;
+  display: flex;
+}
+.search{
+  float: right;
+  margin: 4px 15px;
+}
+.search_input{
+  width: 340px;
+  height: 30px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: 1px solid rgba(140, 151, 178, 40);
+  padding-left: 10px;
+  border-right: none;
+  outline:none;
+}
+.search__btn{
+  height: 34px;
+  width: 40px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 1px solid rgba(140, 151, 178, 40);
+  border-left: none;
+  background: white;
+  outline:none;
+  cursor: pointer;
+}
+.search-btn__icon{
+  color: #8c97b2;
+}
+.filter__radio:checked~label{background:#97b3ce; color:#fff; border-radius: 15px;}
+.filter__radio[type="radio"]{display:none}
+
 /***********************************************************
                       FOOTER
 ***********************************************************/
