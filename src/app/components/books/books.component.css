@@ -1,17 +1,23 @@
 .book-container {
   float: left;
-  margin: 5px; }
+  padding: 5px;
+  border-radius: 5px; }
+
+.book-container:hover {
+  box-shadow: 0 10px 20px rgba(50, 50, 50, 0.4);
+  transition: ease-in-out 0.3s;
+  z-index: 4; }
 
 .book__img {
   padding: 5px; }
 
 .book__name {
-  margin: 5px 0;
+  margin: 5px;
   color: #444c63;
   font-size: 16px; }
 
 .book__author {
-  margin: 10px 0;
+  margin: 10px 5px;
   color: #6f7d95;
   font-size: 12px; }
 

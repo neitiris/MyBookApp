@@ -1,8 +1,11 @@
-<div class="book-container">
-  <div class="book__details">
-    <a href=""> <img class="book__img" src="{{this.book_image}}" alt=""></a>
-    <h3 class="book__name">{{this.book_name}}</h3>
-    <p class="book__author">{{this.book_author}}</p>
+
+  <div class="book-container">
+    <a class="chosen__book" href="">
+    <div class="book__details">
+      <img class="book__img" src="{{this.book.img}}" alt="">
+      <h3 class="book__name">{{this.book.name}}</h3>
+      <p class="book__author">{{this.book.author}}</p>
+    </div>
+    <app-rating [rating]='this.book.rating' [itemId]='this.book.id'></app-rating>
+    </a>
   </div>
-  <app-rating [rating]='this.book_rating' [itemId]='this.book_id'></app-rating>
-</div>

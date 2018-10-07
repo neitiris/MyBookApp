@@ -8,7 +8,6 @@ import {Component, Input, OnInit} from '@angular/core';
 export class RatingComponent implements OnInit {
   @Input() rating: number;
   @Input() itemId: number;
-
   inputName: string;
   ngOnInit() {
     this.inputName = this.itemId + '_rating';

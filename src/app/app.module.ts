@@ -21,7 +21,7 @@ import { BooksComponent, RatingComponent } from './components';
     RouterModule,
     ApproutingModule,
     FontAwesomeModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [
     HttpClientModule,

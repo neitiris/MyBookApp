@@ -63,15 +63,7 @@
       </div>
 
       <div class="content">
-        <app-books
-          *ngFor="let book of books"
-          [book_author]="book.name"
-          [book_name]="book.author"
-          [book_image]="book.img"
-          [book_id]="book.id"
-          [book_rating]="book.rating"
-        >
-        </app-books>
+        <app-books *ngFor="let book of books" [book]="book"></app-books>
       </div>
 
     </div>
