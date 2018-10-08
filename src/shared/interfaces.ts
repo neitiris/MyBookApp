@@ -3,7 +3,7 @@ export interface IBook {
   name: string;
   author: string;
   img: string;
-  rating: string;
+  rating: number;
 }
 export interface ILinkList {
   icon: any;

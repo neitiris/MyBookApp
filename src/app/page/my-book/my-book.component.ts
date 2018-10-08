@@ -15,6 +15,7 @@ import {
   titles,
   users
 } from '../../../shared/mock-data';
+import { IBook } from '../../../shared/interfaces';
 
 @Component({
   selector: 'app-my-book',
@@ -38,5 +39,7 @@ export class MyBookComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  public updateBookRating(newRating: number, book: IBook) {
+    book.rating = newRating;
+  }
 }

@@ -63,7 +63,7 @@
       </div>
 
       <div class="content">
-        <app-books *ngFor="let book of books" [book]="book"></app-books>
+        <app-books *ngFor="let book of books" [book]="book" (setRating)="updateBookRating($event, book)"></app-books>
       </div>
 
     </div>

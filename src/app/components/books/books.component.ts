@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, Output, EventEmitter, OnInit} from '@angular/core';
 import { IBook } from '../../../shared/interfaces';
 
 @Component({
@@ -8,8 +8,12 @@ import { IBook } from '../../../shared/interfaces';
 })
 export class BooksComponent implements OnInit {
   @Input() book: IBook;
+  @Output() setRating: any = new EventEmitter();
   constructor() { }
 
   ngOnInit() {
+  }
+  public rate(rating: number) {
+    this.setRating.emit(rating);
   }
 }

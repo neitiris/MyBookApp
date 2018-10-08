@@ -32,15 +32,15 @@ import {faBook, faCircle, faClock, faGlobeAmericas, faListAlt, faShoppingCart, f
     {class: 'header__box1', text: 'Browse Available Books'}
   ];
   export const  books: IBook[] = [
-    {id: '1', name: 'myBook1', author: 'me1', img: '../../../assets/book-cover.png', rating: '1'},
-    {id: '2', name: 'myBook2', author: 'me2', img: '../../../assets/book-cover(1).png', rating: '3'},
-    {id: '3', name: 'myBook3', author: 'me3', img: '../../../assets/book-cover(2).png', rating: '5'},
-    {id: '4', name: 'myBook4', author: 'me4', img: '../../../assets/book-cover(3).png', rating: '2'},
-    {id: '5', name: 'myBook5', author: 'me5', img: '../../../assets/book-cover(4).png', rating: '4'},
-    {id: '6', name: 'myBook6', author: 'me6', img: '../../../assets/book-cover(5).png', rating: '5'},
-    {id: '7', name: 'myBook7', author: 'me7', img: '../../../assets/book-cover(6).png', rating: '1'},
-    {id: '8', name: 'myBook8', author: 'me8', img: '../../../assets/book-cover(7).png', rating: '3'},
-    {id: '9', name: 'myBook9', author: 'me9', img: '../../../assets/book-cover(8).png', rating: '4'},
-    {id: '10', name: 'myBook10', author: 'me10', img: '../../../assets/book-cover(9).png', rating: '2'},
+    {id: '1', name: 'myBook1', author: 'me1', img: '../../../assets/book-cover.png', rating: 1},
+    {id: '2', name: 'myBook2', author: 'me2', img: '../../../assets/book-cover(1).png', rating: 3},
+    {id: '3', name: 'myBook3', author: 'me3', img: '../../../assets/book-cover(2).png', rating: 5},
+    {id: '4', name: 'myBook4', author: 'me4', img: '../../../assets/book-cover(3).png', rating: 2},
+    {id: '5', name: 'myBook5', author: 'me5', img: '../../../assets/book-cover(4).png', rating: 4},
+    {id: '6', name: 'myBook6', author: 'me6', img: '../../../assets/book-cover(5).png', rating: 5},
+    {id: '7', name: 'myBook7', author: 'me7', img: '../../../assets/book-cover(6).png', rating: 1},
+    {id: '8', name: 'myBook8', author: 'me8', img: '../../../assets/book-cover(7).png', rating: 3},
+    {id: '9', name: 'myBook9', author: 'me9', img: '../../../assets/book-cover(8).png', rating: 4},
+    {id: '10', name: 'myBook10', author: 'me10', img: '../../../assets/book-cover(9).png', rating: 2}
   ];
 
