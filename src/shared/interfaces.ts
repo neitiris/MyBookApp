@@ -1,9 +1,9 @@
 export interface IBook {
-  id?: string|number;
+  id?: number;
   createdAt: string;
   name: string;
   author: string;
-  img: string;
+  img?: string;
   price?: number;
   rating: number;
 }

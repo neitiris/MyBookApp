@@ -29,25 +29,25 @@ import {faBook, faCircle, faClock, faGlobeAmericas, faListAlt, faShoppingCart, f
     { sort: 'price', name: 'Free Books', title: 'Browse Available Books', checked: false }
   ];
   export const  BOOKS: IBook[] = [
-    {id: '1', name: 'myBook1', author: 'me1', img: '../../../assets/book-cover.png',
+    {id: 1, name: 'myBook1', author: 'me1', img: '../../../assets/book-cover.png',
       rating: 1, createdAt: '2017-10-08T18:51:47.699Z', price: 12},
-    {id: '2', name: 'myBook2', author: 'me2', img: '../../../assets/book-cover(1).png',
+    {id: 2, name: 'myBook2', author: 'me2', img: '../../../assets/book-cover(1).png',
       rating: 3, createdAt: '2018-11-08T18:51:47.699Z', price: 4.99},
-    {id: '3', name: 'myBook3', author: 'me3', img: '../../../assets/book-cover(2).png',
+    {id: 3, name: 'myBook3', author: 'me3', img: '../../../assets/book-cover(2).png',
       rating: 5, createdAt: '2018-03-08T18:51:47.699Z', price: 3},
-    {id: '4', name: 'myBook4', author: 'me4', img: '../../../assets/book-cover(3).png',
+    {id: 4, name: 'myBook4', author: 'me4', img: '../../../assets/book-cover(3).png',
       rating: 2, createdAt: '2015-10-08T18:51:47.699Z'},
-    {id: '5', name: 'myBook5', author: 'me5', img: '../../../assets/book-cover(4).png',
+    {id: 5, name: 'myBook5', author: 'me5', img: '../../../assets/book-cover(4).png',
       rating: 4, createdAt: '2018-10-01T18:51:47.699Z'},
-    {id: '6', name: 'myBook6', author: 'me6', img: '../../../assets/book-cover(5).png',
+    {id: 6, name: 'myBook6', author: 'me6', img: '../../../assets/book-cover(5).png',
       rating: 5, createdAt: '2018-01-08T18:51:47.699Z', price: 0},
-    {id: '7', name: 'myBook7', author: 'me7', img: '../../../assets/book-cover(6).png',
+    {id: 7, name: 'myBook7', author: 'me7', img: '../../../assets/book-cover(6).png',
       rating: 1, createdAt: '2018-10-08T11:51:47.699Z', price: 7},
-    {id: '8', name: 'myBook8', author: 'me8', img: '../../../assets/book-cover(7).png',
+    {id: 8, name: 'myBook8', author: 'me8', img: '../../../assets/book-cover(7).png',
       rating: 3, createdAt: '2018-10-08T08:51:47.699Z'},
-    {id: '9', name: 'myBook9', author: 'me9', img: '../../../assets/book-cover(8).png',
+    {id: 9, name: 'myBook9', author: 'me9', img: '../../../assets/book-cover(8).png',
       rating: 4, createdAt: '2017-09-03T18:51:47.699Z', price: 1},
-    {id: '10', name: 'myBook10', author: 'me10', img: '../../../assets/book-cover(9).png',
+    {id: 10, name: 'myBook10', author: 'me10', img: '../../../assets/book-cover(9).png',
       rating: 2, createdAt: '2018-10-04T18:51:47.699Z', price: 99}
   ];
 

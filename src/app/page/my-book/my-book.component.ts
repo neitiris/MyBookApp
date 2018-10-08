@@ -81,4 +81,29 @@ export class MyBookComponent implements OnInit {
       return b.name.toLowerCase().indexOf(value) !== -1 || b.author.toLowerCase().indexOf(value) !== -1;
     });
   }
+
+  public showNewBookBlock() {
+    const newBook: IBook = {
+      id: 0,
+      name: '',
+      author: '',
+      price: 0,
+      createdAt: (new Date).toISOString(),
+      rating: 0
+    };
+    this.books.unshift(newBook);
+    this.filterBooksBy(this.filterOption);
+  }
+
+  public discardNewBook() {
+    this.books = _.filter(this.books, (b: IBook) => b.id);
+    this.filterBooksBy(this.filterOption);
+  }
+
+  public createNewBook(newBook: IBook) {
+    newBook.img = '../../../assets/book-cover(5).png';
+    newBook.id = this.books[this.books.length - 1].id++;
+    this.books.push(newBook);
+    this.filterBooksBy(this.filterOption);
+  }
 }
