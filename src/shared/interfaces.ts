@@ -1,8 +1,10 @@
 export interface IBook {
   id?: string|number;
+  createdAt: string;
   name: string;
   author: string;
   img: string;
+  price?: number;
   rating: number;
 }
 export interface ILinkList {
@@ -22,7 +24,8 @@ export interface IAlert {
   time: string;
 }
 export interface IFilter {
-  filter1: string;
+  checked?: boolean;
+  sort: string;
   name: string;
   title: string;
 }

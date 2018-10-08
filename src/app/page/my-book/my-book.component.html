@@ -50,20 +50,20 @@
         <h1 class="books__label-title">Browse Available Books</h1>
         <div class="books__nav">
           <ul class="books-filter__list">
-            <li class="books-filter__item" *ngFor="let filter of filters">
-              <input class="filter__radio" type="radio" name="radio" id="{{filter.filter1}}">
-              <label for="{{filter.filter1}}" class="filter__button">{{filter.name}}</label>
+            <li class="books-filter__item" *ngFor="let filter of filters" (click)="filterBooksBy(filter.sort)">
+              <input class="filter__radio" type="radio" name="radio" id="{{filter.sort}}" [checked]="filter.checked">
+              <label for="{{filter.sort}}" class="filter__button">{{filter.name}}</label>
             </li>
           </ul>
           <div class="search">
-            <input class="search_input" type="text" placeholder="Enter Keywords">
+            <input class="search_input" type="text" placeholder="Enter Keywords" [(ngModel)]="searchString" (keyup)="searchBook(searchString)">
             <button class="search__btn"><fa-icon class="search-btn__icon" [icon]="faSearch"></fa-icon></button>
           </div>
         </div>
       </div>
 
       <div class="content">
-        <app-books *ngFor="let book of books" [book]="book" (setRating)="updateBookRating($event, book)"></app-books>
+        <app-books *ngFor="let book of booksFiltered" [book]="book" (setRating)="updateBookRating($event, book)"></app-books>
       </div>
 
     </div>
