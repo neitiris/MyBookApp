@@ -12,11 +12,11 @@ import {
   FILTERS,
   LINKS_LIST,
   LINKS_TYPES,
-  USERS
+  USERS,
+  TITLE
 } from '../../../shared/mock-data';
 import { IBook } from '../../../shared/interfaces';
 import * as _ from 'lodash';
-import {s} from '@angular/core/src/render3';
 
 @Component({
   selector: 'app-my-book',
@@ -38,6 +38,7 @@ export class MyBookComponent implements OnInit {
   users = USERS;
   filterOption = 'all';
   searchString = '';
+  title: string;
 
   constructor() { }
 
@@ -60,15 +61,19 @@ export class MyBookComponent implements OnInit {
       switch (param) {
         case 'all':
           this.booksFiltered = _.clone(this.books);
+          this.title = TITLE[0].title;
           break;
         case 'recent':
           this.booksFiltered = _.orderBy(this.books, ['createdAt'], ['desc']);
+          this.title = TITLE[1].title;
           break;
         case 'popular':
           this.booksFiltered = _.filter(this.books, (b: IBook) => b.rating > 2);
+          this.title = TITLE[2].title;
           break;
         case 'price':
           this.booksFiltered = _.filter(this.books, (b: IBook) => !b.price);
+          this.title = TITLE[3].title;
           break;
       }
     }

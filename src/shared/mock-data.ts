@@ -4,19 +4,25 @@ import {faBook, faCircle, faClock, faGlobeAmericas, faListAlt, faShoppingCart, f
   export const USERS = [
     {img: '../../../assets/img_avatar.png', name: 'John Doe'}
   ];
+export const TITLE = [
+  {title: 'All Books'},
+  {title: 'Most Resent'},
+  {title: 'Most Popular'},
+  {title: 'Free Books'}
+];
   export const LINKS_LIST: ILinkList[] = [
-    {icon: faBook, name: 'Now Reading', radio: 'radio1'},
-    {icon: faGlobeAmericas, name: 'Browse', radio: 'radio2'},
-    {icon: faShoppingCart, name: 'Buy Books', radio: 'radio3'},
-    {icon: faStar, name: 'Favorite Books', radio: 'radio4'},
-    {icon: faListAlt, name: 'WishList', radio: 'radio5'},
-    {icon: faClock, name: 'History', radio: 'radio7'}
+    {icon: faBook, name: 'Now Reading', radio: 'radio1', checked: true },
+    {icon: faGlobeAmericas, name: 'Browse', radio: 'radio2', checked: false},
+    {icon: faShoppingCart, name: 'Buy Books', radio: 'radio3', checked: false},
+    {icon: faStar, name: 'Favorite Books', radio: 'radio4', checked: false},
+    {icon: faListAlt, name: 'WishList', radio: 'radio5', checked: false},
+    {icon: faClock, name: 'History', radio: 'radio7', checked: false}
   ];
   export const LINKS_TYPES: ILinkTypes[] = [
-    {icon: faCircle, name: 'Must Read Titles', radio2: 'radio8', class: 'red'},
-    {icon: faCircle, name: 'Best Of List', radio2: 'radio9', class: 'orange'},
-    {icon: faCircle, name: 'Classic Novels', radio2: 'radio10', class: 'blue'},
-    {icon: faCircle, name: 'Non Fiction', radio2: 'radio11', class: 'violete'},
+    {icon: faCircle, name: 'Must Read Titles', radio2: 'radio8', class: 'red', checked: false},
+    {icon: faCircle, name: 'Best Of List', radio2: 'radio9', class: 'orange', checked: false},
+    {icon: faCircle, name: 'Classic Novels', radio2: 'radio10', class: 'blue', checked: false},
+    {icon: faCircle, name: 'Non Fiction', radio2: 'radio11', class: 'violete', checked: false},
   ];
   export const ALERTS: IAlert[] = [
     {icon: faClock, name: 'You added Fight Club by Chuck Palahniuk to your Must Read Title', time: '48 minutes ago'},

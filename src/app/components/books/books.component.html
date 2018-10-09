@@ -7,11 +7,12 @@
     </div>
     <app-rating [rating]='this.book.rating' [itemId]='this.book.id' (setRating)="rate($event)"></app-rating>
   </a>
-  <div *ngIf="!this.book.id">
-    <input name="name" placeholder="Name" [(ngModel)]="this.book.name" type="text">
-    <input name="author" placeholder="Author" [(ngModel)]="this.book.author" type="text">
-    <input name="price" placeholder="Price" [(ngModel)]="this.book.price" type="number">
-    <button class="add_book__button" (click)="newBook(this.book)"><fa-icon [icon]="FaPlus"></fa-icon> ADD A BOOK</button>
-    <button class="add_book__button" (click)="discardNewBook()">CANCEL</button>
+  <div class="new_book" *ngIf="!this.book.id">
+    <h3>Create Book Details</h3>
+    <input class="book_input" name="name" placeholder="Name" [(ngModel)]="this.book.name" type="text">
+    <input class="book_input" name="author" placeholder="Author" [(ngModel)]="this.book.author" type="text">
+    <input class="book_input" name="price" placeholder="Price" [(ngModel)]="this.book.price" type="number">
+    <button class="new_book__button create__button" (click)="newBook(this.book)"><fa-icon [icon]="FaPlus"></fa-icon> ADD A BOOK</button>
+    <button class="new_book__button abort__button" (click)="discardNewBook()">CANCEL</button>
   </div>
 </div>

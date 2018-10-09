@@ -9,6 +9,8 @@
   height: 372px;
   width: 220px;
   overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 .book-container:hover{
   box-shadow: 0 10px 20px rgba(50, 50, 50, 0.4);
@@ -27,4 +29,35 @@
   margin: 10px 5px;
   color:  #6f7d95;
   font-size: 12px;
+}
+/********************
+      NEW BOOK
+********************/
+.new_book{
+  text-align: center;
+}
+.book_input{
+  height: 30px;
+  width: 200px;
+  border-radius: 10px;
+  border: 1px solid gainsboro;
+  padding: 0 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.new_book__button{
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid gainsboro;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+.create__button{
+  background: #32c132;
+}
+.abort__button{
+  background: #c11718;
 }

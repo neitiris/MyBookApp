@@ -23,13 +23,13 @@
       </ul>
       <ul class="aside__list">
         <li class="aside__item" *ngFor="let link of linksList">
-          <input class="aside__radio" type="radio" name="radio" id="{{link.radio}}">
+          <input class="aside__radio" type="radio" name="aside_radio" id="{{link.radio}}" [checked]="link.checked">
           <label for="{{link.radio}}" class="aside__link"><fa-icon class="aside__icon" [icon]="link.icon"></fa-icon> {{link.name}}</label>
         </li>
       </ul>
       <ul class="aside__list">
         <li class="aside__item" *ngFor="let link of linksTypes">
-          <input class="aside__radio" type="radio" name="radio" id="{{link.radio2}}">
+          <input class="aside__radio" type="radio" name="aside_radio" id="{{link.radio2}}" [checked]="link.checked">
           <label for="{{link.radio2}}" class="aside__link" ><fa-icon class="aside__icon circle_icon  {{link.class}}" [icon]="link.icon"></fa-icon> {{link.name}}</label>
         </li>
       </ul>
@@ -47,11 +47,11 @@
 
     <div class="books__container">
       <div class="books__layout">
-        <h1 class="books__label-title">Browse Available Books</h1>
+        <h1 class="books__label-title">{{title}}</h1>
         <div class="books__nav">
           <ul class="books-filter__list">
             <li class="books-filter__item" *ngFor="let filter of filters" (click)="filterBooksBy(filter.sort)">
-              <input class="filter__radio" type="radio" name="radio" id="{{filter.sort}}" [checked]="filter.checked">
+              <input class="filter__radio" type="radio" name="filter_radio" id="{{filter.sort}}" [checked]="filter.checked">
               <label for="{{filter.sort}}" class="filter__button">{{filter.name}}</label>
             </li>
           </ul>

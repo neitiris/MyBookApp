@@ -11,12 +11,14 @@ export interface ILinkList {
   icon: any;
   name: string;
   radio: string;
+  checked?: boolean;
 }
 export interface ILinkTypes {
   icon: any;
   name: string;
   radio2: string;
   class: string;
+  checked?: boolean;
 }
 export interface IAlert {
   icon: any;
