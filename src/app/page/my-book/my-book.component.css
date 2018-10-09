@@ -197,7 +197,8 @@
   border-left: none;
   background: white;
   outline: none;
-  cursor: pointer; }
+  cursor: pointer;
+  vertical-align: top; }
 
 .search-btn__icon {
   color: #8c97b2; }

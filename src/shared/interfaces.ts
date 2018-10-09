@@ -1,9 +1,11 @@
 export interface IBook {
-  id?: string|number;
+  id?: number;
+  createdAt: string;
   name: string;
   author: string;
-  img: string;
-  rating: string;
+  img?: string;
+  price?: number;
+  rating: number;
 }
 export interface ILinkList {
   icon: any;
@@ -22,7 +24,8 @@ export interface IAlert {
   time: string;
 }
 export interface IFilter {
-  filter1: string;
+  checked?: boolean;
+  sort: string;
   name: string;
   title: string;
 }

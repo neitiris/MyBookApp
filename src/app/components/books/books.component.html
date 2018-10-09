@@ -1,11 +1,17 @@
-
-  <div class="book-container">
-    <a class="chosen__book" href="">
+<div class="book-container">
+  <a class="chosen__book" href="" *ngIf="this.book.id">
     <div class="book__details">
       <img class="book__img" src="{{this.book.img}}" alt="">
       <h3 class="book__name">{{this.book.name}}</h3>
       <p class="book__author">{{this.book.author}}</p>
     </div>
-    <app-rating [rating]='this.book.rating' [itemId]='this.book.id'></app-rating>
-    </a>
+    <app-rating [rating]='this.book.rating' [itemId]='this.book.id' (setRating)="rate($event)"></app-rating>
+  </a>
+  <div *ngIf="!this.book.id">
+    <input name="name" placeholder="Name" [(ngModel)]="this.book.name" type="text">
+    <input name="author" placeholder="Author" [(ngModel)]="this.book.author" type="text">
+    <input name="price" placeholder="Price" [(ngModel)]="this.book.price" type="number">
+    <button class="add_book__button" (click)="newBook(this.book)"><fa-icon [icon]="FaPlus"></fa-icon> ADD A BOOK</button>
+    <button class="add_book__button" (click)="discardNewBook()">CANCEL</button>
   </div>
+</div>

@@ -3,13 +3,13 @@
   float:left;
 }
 
-.rating:not(:checked) > input {
+.rating > input {
   position:absolute;
   top:-9999px;
   clip:rect(0,0,0,0);
 }
 
-.rating:not(:checked) > label {
+.rating label {
   float: right;
   width: 15px;
   overflow: hidden;
@@ -20,22 +20,19 @@
   color: #ddd;
 }
 
-.rating:not(:checked) > label:before {
+.rating label:before {
   content: '★ ';
 }
 
-.rating > input:checked ~ label {
+.rating label.checked {
   color: #f70;
 }
 
-.rating:not(:checked) > label:hover,
-.rating:not(:checked) > label:hover ~ label {
+.rating label:hover,
+.rating label:hover ~ label {
   color: gold;
 }
 
-
-.rating > input:checked ~ label:hover,
-.rating > input:checked ~ label:hover ~ label,
-.rating > label:hover ~ input:checked ~ label {
+.rating > label:hover {
   color: #ea0;
 }

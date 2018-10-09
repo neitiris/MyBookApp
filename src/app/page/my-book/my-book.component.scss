@@ -119,6 +119,7 @@
   padding: 5px 12px 5px 5px;
 }
 .add_book__button{
+  outline: none !important;
   border: none;
   border-radius: 4px;
   background-color:  #f2795a;
@@ -129,6 +130,11 @@
   font-weight: bold;
   line-height: 26px;
   text-align: center;
+  cursor: pointer;
+}
+.add_book__button:hover {
+  background-color: #fd8659;
+  box-shadow: 0 10px 20px rgba(50, 50, 50, 0.4);
 }
 .red{
   color: red;
@@ -202,6 +208,7 @@
   background: white;
   outline:none;
   cursor: pointer;
+  vertical-align: top;
 }
 .search-btn__icon{
   color: #8c97b2;
